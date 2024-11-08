@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'Figtree';
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format(truetype-variations);
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format(truetype) tech('variations');
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype-variations');
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype') tech('variations');
     font-weight: 400 1000;
 }
 
@@ -21,7 +21,7 @@
     font-family: 'Figtree ExtraBold';
     src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
     font-style: normal;
-  }
+}
 
 * {
     margin: 0;
@@ -67,10 +67,6 @@ body {
 }
 
 .author {
-    .avatar {
-        width: 32px;
-        margin-right: var(--spacing-150)
-    }
     display: flex;
     align-items: center;
 }
@@ -97,14 +93,20 @@ body {
 }
 
 .card {
-    .illustration {
-        border-radius: 10px;
-        margin-bottom: var(--spacing-300);
-    }
     border-radius: 20px;
     background-color: var(--white);
     padding: var(--spacing-300);
     border: 1px solid var(--gray-950);
     box-shadow: var(--spacing-100) var(--spacing-100) var(--gray-950);
     width: 384px;
+}
+
+.illustration {
+    border-radius: 10px;
+    margin-bottom: var(--spacing-300);
+}
+
+.avatar {
+    width: 32px;
+    margin-right: var(--spacing-150)
 }

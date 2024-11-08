@@ -17,6 +17,12 @@
     font-weight: 400 1000;
 }
 
+@font-face {
+    font-family: 'Figtree ExtraBold';
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    font-style: normal;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +43,7 @@ body {
 }
 
 .title {
-    font-weight: 900;
+    font-family: 'Figtree ExtraBold';
     font-size: 24px;
     margin-bottom: var(--spacing-150);
 }
